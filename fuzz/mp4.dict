@@ -1,0 +1,116 @@
+# ISOBMFF/MP4 box type codes for fuzzer dictionary
+# File-level boxes
+"ftyp"
+"moov"
+"mdat"
+"free"
+"skip"
+"meta"
+"meco"
+"styp"
+"sidx"
+"ssix"
+"prft"
+
+# Movie-level boxes
+"mvhd"
+"trak"
+"mvex"
+"ipmc"
+"udta"
+
+# Track boxes
+"tkhd"
+"tref"
+"trgr"
+"edts"
+"mdia"
+
+# Edit boxes
+"elst"
+
+# Media boxes
+"mdhd"
+"hdlr"
+"minf"
+
+# Media information boxes
+"vmhd"
+"smhd"
+"hmhd"
+"nmhd"
+"dinf"
+"stbl"
+
+# Data reference boxes
+"dref"
+"url "
+"urn "
+
+# Sample table boxes
+"stsd"
+"stts"
+"ctts"
+"stsc"
+"stsz"
+"stz2"
+"stco"
+"co64"
+"stss"
+"stsh"
+"sdtp"
+"sbgp"
+"sgpd"
+"subs"
+"saiz"
+"saio"
+"cslg"
+
+# Movie fragment boxes
+"moof"
+"mfhd"
+"traf"
+"tfhd"
+"trun"
+"tfdt"
+"mfra"
+"tfra"
+"mfro"
+
+# Movie extends boxes
+"mehd"
+"trex"
+
+# Protection boxes
+"sinf"
+"schi"
+"frma"
+"schm"
+
+# Item property boxes
+"iprp"
+"ipco"
+"ipma"
+
+# Group boxes
+"grpl"
+
+# Common version/flags prefixes (for FullBox headers)
+"\x00\x00\x00\x00"
+"\x01\x00\x00\x00"
+
+# Common brand codes
+"isom"
+"iso2"
+"iso6"
+"mp41"
+"mp42"
+"avc1"
+"dash"
+
+# Common handler types
+"vide"
+"soun"
+"hint"
+"text"
+"subt"

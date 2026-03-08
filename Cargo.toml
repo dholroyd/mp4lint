@@ -1,0 +1,32 @@
+[package]
+name = "mp4lint"
+version = "0.1.0"
+edition = "2024"
+description = "Validates ISOBMFF/MP4 files against ISO 14496-12"
+repository = "https://github.com/dholroyd/mp4lint.git"
+license = "MIT OR Apache-2.0"
+
+[lib]
+name = "mp4lint"
+path = "src/lib.rs"
+
+[[bin]]
+name = "mp4lint"
+path = "src/bin/mp4lint.rs"
+
+[dependencies]
+isobmff-syntax = "0.1.0"
+thiserror = "2"
+clap = { version = "4", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[dev-dependencies]
+criterion = { version = "0.5", features = ["html_reports"] }
+
+[[bench]]
+name = "validate"
+harness = false
+
+[profile.bench]
+debug = true
